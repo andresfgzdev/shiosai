@@ -1,0 +1,92 @@
+:root {
+  --paper: #f2eee3;
+  --paper-2: #e9e3d3;
+  --cobalt: #244c9a;
+  --deep: #13265c;
+  --mute: #3b4f7e;
+  --copper: #c0532f;
+  --copper-ink: #a9441f;
+  --sky: #e8c4b8;
+  --line: rgb(36 76 154 / 0.22);
+  --line-strong: rgb(36 76 154 / 0.5);
+  --ring: rgb(36 76 154 / 0.45);
+  --neon: #7cffb2;
+  --neon-glow: rgb(124 255 178 / 0.9);
+  --neon-haze: rgb(124 255 178 / 0.55);
+  --uv-pressed: #2a1e66;
+  --storm-ground: #10204e;
+  --storm-card: rgb(16 32 78 / 0.84);
+  --on-storm: #f2eee3;
+  --on-storm-mute: rgb(242 238 227 / 0.8);
+  --on-storm-soft: rgb(242 238 227 / 0.72);
+  --on-storm-line: rgb(242 238 227 / 0.18);
+  --chip-ground: rgb(19 38 92 / 0.88);
+  --chip-ink: #f2eee3;
+  --glass: rgb(242 238 227 / 0.74);
+  --glass-strong: rgb(242 238 227 / 0.82);
+  --chip-paper: rgb(242 238 227 / 0.95);
+  --glass-edge: rgb(255 255 255 / 0.6);
+  --tint: rgb(36 76 154 / 0.09);
+  --tint-strong: rgb(36 76 154 / 0.16);
+  --shadow-deep: rgb(19 38 92 / 0.6);
+  --shadow-soft: rgb(19 38 92 / 0.35);
+  --on-cobalt: #f2eee3;
+  --on-cobalt-ring: rgb(242 238 227 / 0.3);
+  --on-cobalt-tile: rgb(242 238 227 / 0.16);
+  --strip-ground: #13265c;
+  --strip-ink: #f2eee3;
+  --legal-ground: #13265c;
+  --legal-ink: rgb(242 238 227 / 0.78);
+  --legal-link: rgb(242 238 227 / 0.85);
+  --headline-from: #13265c;
+  --headline-to: #4f74b8;
+  --glow-paper: rgb(255 246 222 / 0.55);
+  --glow-halo: rgb(255 236 200 / 0.35);
+  --error-halo: rgb(192 83 47 / 0.14);
+  --focus-halo: rgb(36 76 154 / 0.14);
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --kf-rise: rise;
+  --kf-spin: spin;
+  --kf-marquee: marquee;
+  --kf-mesh: mesh;
+  --kf-press: press;
+  --kf-stamp: stamp;
+  --kf-print: print;
+  --kf-fill: fill;
+  --kf-nav-in: nav-in;
+  --gutter: 40px;
+  --container: 1280px;
+}
+
+:root[data-uv] {
+  --paper: #0b0820;
+  --paper-2: #151033;
+  --cobalt: #9db4ff;
+  --deep: #ece8ff;
+  --mute: #b9b2e6;
+  --copper: #ff8a5c;
+  --copper-ink: #ff8a5c;
+  --line: rgb(157 180 255 / 0.28);
+  --line-strong: rgb(157 180 255 / 0.55);
+  --ring: rgb(157 180 255 / 0.4);
+  --glass: rgb(21 16 51 / 0.78);
+  --glass-strong: rgb(11 8 32 / 0.85);
+  --chip-paper: rgb(11 8 32 / 0.92);
+  --glass-edge: rgb(157 180 255 / 0.12);
+  --tint: rgb(157 180 255 / 0.1);
+  --tint-strong: rgb(157 180 255 / 0.18);
+  --on-cobalt: #0b0820;
+  --strip-ground: #1c1547;
+  --strip-ink: #ece8ff;
+  --legal-ground: #1c1547;
+  --legal-ink: #b9b2e6;
+  --legal-link: #ece8ff;
+  --headline-from: #ece8ff;
+  --headline-to: #9db4ff;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --gutter: 16px;
+  }
+}

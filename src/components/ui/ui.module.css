@@ -1,0 +1,132 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+.iconSmall {
+  width: 16px;
+  height: 16px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--copper-ink);
+}
+
+.eyebrow::before,
+.eyebrowCentered::after {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: currentColor;
+}
+
+.eyebrowCentered {
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 8px 12px 8px 16px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--on-cobalt);
+  background: var(--cobalt);
+  box-shadow:
+    inset 0 0 0 1px var(--on-cobalt-ring),
+    inset 0 0 0 4px var(--cobalt),
+    inset 0 0 0 5px var(--on-cobalt-ring),
+    0 16px 32px -16px var(--cobalt);
+  transition:
+    transform 0.6s var(--ease),
+    filter 0.6s var(--ease),
+    background-color 0.9s var(--ease),
+    color 0.9s var(--ease);
+}
+
+.button:hover {
+  color: var(--on-cobalt);
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.button:disabled {
+  cursor: progress;
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: var(--on-cobalt-tile);
+  transition: transform 0.6s var(--ease);
+}
+
+.button:hover .arrow {
+  transform: translateX(4px);
+}
+
+.chip {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--chip-ground);
+  color: var(--chip-ink);
+}
+
+.numeral {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--deep);
+  background: url("/engraving/hatch.svg") repeat;
+  background-size: 96px 96px;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.numeralMoving {
+  animation: var(--kf-mesh) 24s linear infinite;
+}
+
+@media (max-width: 720px) {
+  .numeralMoving {
+    animation: none;
+  }
+}
