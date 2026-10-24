@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shiosai · Tonight's dinner left the harbour at five</title>
+<meta name="description" content="Shiosai is a twenty two seat seafood house on the pier at Manazuru. Our own boat fishes at dawn and the nine course tide menu is written when it returns. Book a table at 17:30 or 20:00.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;family=Noto+Serif+JP:wght@700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2EEE3}
+a{color:#13265C}a:hover{color:#244C9A}
+.ss{--paper:#F2EEE3;--paper2:#E9E3D3;--cobalt:#244C9A;--deep:#13265C;--mute:#3B4F7E;--copper:#C0532F;--sky:#E8C4B8;--line:rgba(36,76,154,.22);--neon:#7CFFB2;--ease:cubic-bezier(.32,.72,0,1);font-family:'Manrope',system-ui,sans-serif;color:var(--deep);background:var(--paper);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:relative;overflow-x:clip;interpolate-size:allow-keywords;transition:background-color .9s var(--ease),color .9s var(--ease)}
+.ss *{box-sizing:border-box}
+.ss ::selection{background:var(--cobalt);color:var(--paper)}
+.ss.uv{--paper:#0B0820;--paper2:#151033;--cobalt:#9DB4FF;--deep:#ECE8FF;--mute:#B9B2E6;--copper:#FF8A5C;--line:rgba(157,180,255,.28)}
+.jp{font-family:'Noto Serif JP',serif}
+.mono{font-family:'Geist Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:1280px;margin:0 auto;padding:0 40px;position:relative}
+.ss a:focus-visible,.ss button:focus-visible,.ss input:focus-visible,.ss summary:focus-visible,.ss [tabindex]:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+.skip{position:fixed;left:24px;top:-80px;z-index:95;background:var(--deep);color:var(--paper);padding:8px 12px;border-radius:4px;font-size:14px;line-height:20px;font-weight:600;text-decoration:none;transition:top .5s var(--ease)}
+.skip:focus{top:24px;color:var(--paper)}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ic-sm{width:16px;height:16px}
+.media{transition:filter 1.1s var(--ease)}
+.ss.uv .media{filter:invert(1) hue-rotate(180deg) saturate(1.5) brightness(.9) contrast(1.05)}
+.uvm{opacity:0;transition:opacity 1.2s var(--ease);pointer-events:none}
+.ss.uv .uvm{opacity:1}
+.glow{color:var(--neon);text-shadow:0 0 8px rgba(124,255,178,.9),0 0 24px rgba(124,255,178,.55)}
+.fibers{position:absolute;inset:0;z-index:2;background:url(/_blob/bb4aa7ed9d51c597644baab67741409d) repeat;background-size:900px 900px;mix-blend-mode:screen;filter:drop-shadow(0 0 3px rgba(255,255,255,.7))}
+
+.vf{position:fixed;inset:16px;z-index:70;pointer-events:none}
+.vf i{position:absolute;width:24px;height:24px;border-color:var(--cobalt);border-style:solid;border-width:0;opacity:.7}
+.vf i:nth-child(1){left:0;top:0;border-left-width:1px;border-top-width:1px}
+.vf i:nth-child(2){right:0;top:0;border-right-width:1px;border-top-width:1px}
+.vf i:nth-child(3){left:0;bottom:0;border-left-width:1px;border-bottom-width:1px}
+.vf i:nth-child(4){right:0;bottom:0;border-right-width:1px;border-bottom-width:1px}
+.vf-l,.vf-r{position:absolute;bottom:4px;font-size:12px;line-height:16px;letter-spacing:.16em;text-transform:uppercase;padding:4px 8px;border-radius:2px;background:rgba(242,238,227,.82);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);margin:0;transition:background-color .9s var(--ease)}
+.ss.uv .vf-l,.ss.uv .vf-r{background:rgba(11,8,32,.8)}
+.vf-l{left:32px;color:var(--mute)}
+.vf-r{right:32px;color:var(--copper)}
+.vf-side{position:absolute;left:4px;top:50%;writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg);font-size:12px;line-height:16px;letter-spacing:.4em;text-transform:uppercase;color:var(--cobalt);opacity:.55;margin:0;white-space:nowrap}
+
+.nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:80;display:flex;align-items:center;gap:16px;padding:8px 8px 8px 12px;border-radius:9999px;background:rgba(242,238,227,.74);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 0 0 1px var(--line),0 1px 0 rgba(255,255,255,.6) inset,0 16px 40px -16px rgba(19,38,92,.35);width:max-content;max-width:calc(100% - 32px);animation:navIn 1.1s var(--ease) both;transition:background-color .9s var(--ease)}
+.ss.uv .nav{background:rgba(21,16,51,.78)}
+@keyframes navIn{from{opacity:0;transform:translate(-50%,-32px);filter:blur(8px)}}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--deep);font-weight:700;font-size:16px;line-height:24px;letter-spacing:-.01em}
+.brand:hover{color:var(--deep)}
+.seal{width:32px;height:32px;border-radius:4px;background:var(--cobalt);color:var(--paper);display:grid;place-items:center;font-size:14px;line-height:20px;font-weight:700;box-shadow:inset 0 0 0 2px rgba(242,238,227,.3);transition:background-color .9s var(--ease),color .9s var(--ease)}
+.links{display:flex;gap:4px}
+.lk{font-size:14px;line-height:20px;font-weight:500;color:var(--mute);text-decoration:none;padding:8px 12px;border-radius:9999px;transition:color .5s var(--ease),background-color .5s var(--ease)}
+.lk:hover{color:var(--deep);background:rgba(36,76,154,.09)}
+.lk[aria-current="true"]{color:var(--deep);background:rgba(36,76,154,.14)}
+.uvb{font-family:inherit;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 12px;border:0;border-radius:9999px;cursor:pointer;font-size:14px;line-height:20px;font-weight:600;color:var(--deep);background:rgba(36,76,154,.09);transition:background-color .6s var(--ease),color .6s var(--ease),transform .6s var(--ease)}
+.uvb:hover{transform:translateY(-1px);background:rgba(36,76,154,.16)}
+.uvb:active{transform:scale(.97)}
+.uvb[aria-pressed="true"]{background:#2A1E66;color:var(--neon);box-shadow:0 0 0 1px rgba(124,255,178,.5),0 0 24px -4px rgba(124,255,178,.6)}
+.btn-sm{font-size:14px;line-height:20px;font-weight:600;color:var(--paper);background:var(--deep);padding:8px 12px;min-height:40px;border-radius:9999px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;transition:transform .6s var(--ease),background-color .6s var(--ease)}
+.btn-sm:hover{color:var(--paper);background:var(--cobalt);transform:translateY(-1px)}
+.btn-sm:active{transform:scale(.98)}
+.ss.uv .btn-sm{color:#0B0820}
+.burger{display:none;width:44px;height:44px;border-radius:9999px;border:0;background:rgba(36,76,154,.1);position:relative;cursor:pointer;flex:none}
+.burger span{position:absolute;left:14px;width:16px;height:1.5px;border-radius:2px;background:var(--deep);transition:transform .7s var(--ease),top .7s var(--ease)}
+.burger span:nth-child(1){top:18px}.burger span:nth-child(2){top:25px}
+.burger.open span:nth-child(1){top:21.5px;transform:rotate(45deg)}
+.burger.open span:nth-child(2){top:21.5px;transform:rotate(-45deg)}
+.overlay{position:fixed;inset:0;z-index:75;background:rgba(242,238,227,.82);-webkit-backdrop-filter:blur(40px);backdrop-filter:blur(40px);display:flex;flex-direction:column;justify-content:center;padding:96px 24px 48px;gap:8px;opacity:0;visibility:hidden;transition:opacity .7s var(--ease),visibility .7s}
+.ss.uv .overlay{background:rgba(11,8,32,.85)}
+.overlay.open{opacity:1;visibility:visible}
+.olk{font-size:36px;line-height:40px;font-weight:600;letter-spacing:-.02em;color:var(--deep);text-decoration:none;padding:8px 0;transform:translateY(48px);opacity:0;transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.overlay.open .olk{transform:none;opacity:1}
+.overlay .olk:nth-child(2){transition-delay:.05s}.overlay .olk:nth-child(3){transition-delay:.1s}.overlay .olk:nth-child(4){transition-delay:.15s}.overlay .olk:nth-child(5){transition-delay:.2s}
+.olk.cta{color:var(--copper)}
+
+.hero{position:relative;height:900px;overflow:hidden;background:var(--paper2);cursor:none}
+.hero.coarse{cursor:auto}
+.hero video,.hero .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;display:block}
+.hero .media{animation:press 2s var(--ease) both}
+.denom{position:absolute;right:56px;top:112px;z-index:3;text-align:right;animation:rise 1.4s var(--ease) .5s both}
+.denom p{margin:0}
+.dn{font-size:96px;line-height:1;font-weight:700;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--deep);background:url(/_blob/85fcbe32100ecb6061e1a412643596a1) repeat;background-size:96px 96px;-webkit-background-clip:text;background-clip:text;animation:mesh 24s linear infinite}
+.dn .y{font-size:60px;vertical-align:top;margin-right:4px}
+.dl{font-size:12px;line-height:16px;letter-spacing:.18em;text-transform:uppercase;color:var(--deep)}
+.dl b{color:var(--copper);font-weight:500}
+.panel{position:absolute;left:56px;bottom:56px;z-index:4;width:min(640px,calc(100% - 112px));background:var(--paper);padding:12px;box-shadow:0 0 0 1px rgba(36,76,154,.45),0 40px 80px -40px rgba(19,38,92,.55);border-radius:4px;animation:rise 1.4s var(--ease) .3s both;cursor:auto;transition:background-color .9s var(--ease)}
+.panel-in{position:relative;padding:32px;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.panel-band{height:12px;margin:-12px -12px 12px;background:url(/_blob/2b1a0e3671ecd1f7bc6aceaa348fa15e) repeat-x center;background-size:192px 40px;border-radius:4px 4px 0 0}
+.panel-ro{position:absolute;width:420px;height:420px;right:-180px;top:-160px;opacity:.14;animation:spin 160s linear infinite;pointer-events:none}
+.row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.eyebrow{margin:0;font-size:12px;line-height:16px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.serial{margin:0;font-size:14px;line-height:20px;letter-spacing:.14em;color:var(--copper);white-space:nowrap}
+.h1{position:relative;margin:24px 0 0;font-size:60px;line-height:1;letter-spacing:-.04em;font-weight:700;text-wrap:balance;background:linear-gradient(90deg,#13265C 15%,#4F74B8);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:4px;max-width:680px}
+.ss.uv .h1{background:linear-gradient(90deg,#ECE8FF 15%,#9DB4FF);-webkit-background-clip:text;background-clip:text}
+.h1 .ln{display:block;animation:rise 1.2s var(--ease) both}
+.h1 .ln:nth-child(1){animation-delay:.5s}.h1 .ln:nth-child(2){animation-delay:.6s}.h1 .ln:nth-child(3){animation-delay:.7s}
+.sub{position:relative;margin:24px 0 0;font-size:18px;line-height:28px;color:var(--mute);max-width:520px;text-wrap:pretty;animation:rise 1.2s var(--ease) .8s both}
+.cta-row{position:relative;display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:32px;animation:rise 1.2s var(--ease) .9s both}
+.btn{font-family:inherit;font-size:16px;line-height:24px;font-weight:600;color:var(--paper);background:var(--cobalt);border:0;padding:8px 12px 8px 16px;min-height:48px;border-radius:4px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:12px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(242,238,227,.28),inset 0 0 0 4px var(--cobalt),inset 0 0 0 5px rgba(242,238,227,.35),0 16px 32px -16px var(--cobalt);transition:transform .6s var(--ease),filter .6s var(--ease)}
+.btn:hover{color:var(--paper);transform:translateY(-2px);filter:brightness(1.08)}
+.btn:active{transform:translateY(0) scale(.98)}
+.ss.uv .btn{color:#0B0820}
+.btn .arr{display:grid;place-items:center;width:32px;height:32px;border-radius:2px;background:rgba(242,238,227,.16);transition:transform .6s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.proof{display:flex;align-items:center;gap:8px;font-size:14px;line-height:20px;color:var(--mute);margin:0}
+.proof .ic{color:var(--copper)}
+.lens{position:absolute;left:0;top:0;z-index:5;width:240px;height:240px;border-radius:9999px;pointer-events:none;opacity:0;transform:translate3d(-999px,-999px,0) scale(.6);transition:opacity .5s var(--ease),scale .6s var(--ease);will-change:transform}
+.lens.on{opacity:1;scale:1}
+.lens-img{position:absolute;inset:12px;border-radius:9999px;background:url(/_blob/a60aec88a29e84874b06143b4f6a1bfe) no-repeat;box-shadow:inset 0 0 0 1px rgba(19,38,92,.5),0 24px 48px -12px rgba(19,38,92,.6)}
+.ss.uv .lens-img{filter:invert(1) hue-rotate(180deg) saturate(1.5) brightness(.9)}
+.lens svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 30s linear infinite}
+.lens text{font-family:'Geist Mono',monospace;font-size:9px;letter-spacing:3px;fill:var(--deep)}
+.lens-ring{fill:none;stroke:var(--deep);stroke-width:1}
+.lens-cross{position:absolute;left:50%;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px}
+.lens-cross::before,.lens-cross::after{content:"";position:absolute;background:var(--copper)}
+.lens-cross::before{left:7.5px;top:0;width:1px;height:16px}
+.lens-cross::after{top:7.5px;left:0;height:1px;width:16px}
+.hint{position:absolute;right:56px;bottom:56px;z-index:3;display:flex;align-items:center;gap:8px;margin:0;font-size:12px;line-height:16px;letter-spacing:.16em;text-transform:uppercase;color:var(--paper);background:rgba(19,38,92,.85);padding:8px 12px;border-radius:2px;animation:rise 1.2s var(--ease) 1.2s both}
+.hero-uv{position:absolute;right:20%;top:36%;z-index:3;transform:rotate(-8deg)}
+.hero-uv span{display:block;font-size:128px;line-height:1;font-weight:700}
+.hero-uv p{margin:8px 0 0;font-size:12px;line-height:16px;letter-spacing:.3em;text-transform:uppercase;text-align:center}
+
+.tide{position:relative;z-index:1;overflow:hidden;background:var(--deep);color:var(--paper);padding:12px 0;transition:background-color .9s var(--ease)}
+.ss.uv .tide{background:#1C1547;color:var(--deep)}
+.tide-t{display:flex;width:max-content;animation:marquee 80s linear infinite}
+.tide-t span{font-size:14px;line-height:20px;letter-spacing:.16em;text-transform:uppercase;padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:12px}
+.tide-t b{font-weight:500;color:var(--sky)}
+
+.sec{position:relative;z-index:1;padding:96px 0;scroll-margin-top:24px}
+.eb{display:flex;align-items:center;gap:12px;margin:0;font-size:12px;line-height:16px;letter-spacing:.18em;text-transform:uppercase;color:var(--copper)}
+.eb::before{content:"";width:24px;height:1px;background:currentColor}
+.t2{margin:16px 0 0;font-size:48px;line-height:1;letter-spacing:-.035em;font-weight:700;max-width:680px;text-wrap:balance;color:var(--deep)}
+.lead{margin:24px 0 0;font-size:18px;line-height:28px;color:var(--mute);max-width:560px;text-wrap:pretty}
+.rv{opacity:0;transform:translateY(64px);filter:blur(12px);transition:opacity 1s var(--ease),transform 1.1s var(--ease),filter 1s var(--ease)}
+.rv.in{opacity:1;transform:none;filter:blur(0)}
+
+.tag{position:relative;z-index:1;padding:96px 0;overflow:hidden}
+.tag-ro{position:absolute;width:760px;height:760px;left:50%;top:50%;margin:-380px 0 0 -380px;opacity:.1;animation:spin 220s linear infinite;pointer-events:none}
+.tag p.big{position:relative;margin:24px auto 0;font-size:60px;line-height:1;letter-spacing:-.04em;font-weight:700;max-width:960px;text-align:center;text-wrap:balance}
+.tag .eb{justify-content:center}
+.tag .eb::after{content:"";width:24px;height:1px;background:currentColor}
+.w{color:var(--deep);opacity:.24;transition:opacity .9s var(--ease)}
+.w.on{opacity:1}
+.w.cu{color:var(--copper)}
+
+.voy-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.ctrl{display:flex;align-items:center;gap:16px}
+.ctrl p{margin:0;font-size:14px;line-height:20px;letter-spacing:.12em;color:var(--mute);min-width:96px;text-align:right}
+.rnd{width:48px;height:48px;border-radius:9999px;border:0;background:var(--paper2);color:var(--deep);display:grid;place-items:center;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line);transition:transform .6s var(--ease),background-color .6s var(--ease),opacity .6s var(--ease)}
+.rnd:hover{transform:scale(1.06);background:var(--paper)}
+.rnd:active{transform:scale(.94)}
+.rnd:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.track{display:flex;gap:32px;overflow-x:auto;scroll-snap-type:x mandatory;padding:48px max(40px,calc((100% - 1200px) / 2)) 24px;scrollbar-width:none;cursor:grab;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.track.drag{cursor:grabbing;scroll-snap-type:none}
+.track.drag *{user-select:none}
+.nt{flex:none;width:min(1040px,84vw);scroll-snap-align:center;border-radius:4px;padding:12px;background:url(/_blob/1a41333516ef9cacdad8a6643f85f2e0) repeat;background-size:192px 40px;box-shadow:0 0 0 1px rgba(36,76,154,.45),0 40px 80px -48px rgba(19,38,92,.6);transition:transform 1s var(--ease),opacity 1s var(--ease)}
+.nt.dim{opacity:.55;transform:scale(.96)}
+.nt-in{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);background:var(--paper);box-shadow:0 0 0 1px rgba(36,76,154,.45);min-height:460px;transition:background-color .9s var(--ease)}
+.nt-m{position:relative;overflow:hidden;background:var(--paper2)}
+.nt-m video,.nt-m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hue-teal{filter:hue-rotate(-32deg) saturate(1.1)}
+.hue-violet{filter:hue-rotate(34deg)}
+.ss.uv .hue-teal,.ss.uv .hue-violet{filter:invert(1) hue-rotate(180deg) saturate(1.5) brightness(.9)}
+.nt-b{position:relative;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;overflow:hidden}
+.nt-ro{position:absolute;width:360px;height:360px;right:-150px;bottom:-150px;opacity:.14;animation:spin 140s linear infinite;pointer-events:none}
+.nt-time{margin:0;font-size:72px;line-height:1;font-weight:700;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--deep);background:url(/_blob/85fcbe32100ecb6061e1a412643596a1) repeat;background-size:96px 96px;-webkit-background-clip:text;background-clip:text}
+.nt-b h3{margin:0;font-size:24px;line-height:32px;font-weight:700;letter-spacing:-.02em}
+.nt-b p.d{margin:8px 0 0;font-size:16px;line-height:24px;color:var(--mute);text-wrap:pretty}
+.nt-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;position:relative}
+.nt-k{font-size:48px;line-height:1;color:var(--copper);margin:0}
+.chip{position:absolute;z-index:2;margin:0;font-size:12px;line-height:16px;letter-spacing:.14em;text-transform:uppercase;background:rgba(19,38,92,.88);color:#F2EEE3;padding:4px 8px;border-radius:2px}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:8px}
+.dot{width:32px;height:44px;border:0;background:transparent;cursor:pointer;display:grid;place-items:center;padding:0}
+.dot span{display:block;width:100%;height:2px;border-radius:2px;background:var(--line);transition:background-color .6s var(--ease),transform .6s var(--ease)}
+.dot.on span{background:var(--copper);transform:scaleY(2)}
+
+.menu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:64px;align-items:start}
+.plate{position:sticky;top:112px}
+.plate .frame{border-radius:4px;padding:12px;background:url(/_blob/2b1a0e3671ecd1f7bc6aceaa348fa15e) repeat;background-size:192px 40px;box-shadow:0 0 0 1px rgba(36,76,154,.45),0 40px 80px -48px rgba(19,38,92,.6)}
+.plate .frame-in{position:relative;aspect-ratio:1000/1420;overflow:hidden;box-shadow:0 0 0 1px rgba(36,76,154,.45)}
+.plate .frame-in img{width:100%;height:100%;object-fit:cover;display:block}
+.plate figcaption{margin-top:16px;font-size:12px;line-height:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.price{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:32px;padding:24px;border-radius:4px;background:var(--paper2);box-shadow:inset 0 0 0 1px var(--line)}
+.price b{font-size:36px;line-height:40px;font-weight:700;letter-spacing:-.03em}
+.price span{font-size:14px;line-height:20px;color:var(--mute);text-align:right}
+.courses{list-style:none;margin:32px 0 0;padding:0}
+.cr{position:relative;display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:20px 0;cursor:default;transition:padding .7s var(--ease)}
+.cr::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line)}
+.cr::before{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease);z-index:1}
+.cr:hover{padding-left:12px}
+.cr:hover::before{transform:scaleX(1)}
+.cr .no{font-size:14px;line-height:20px;color:var(--copper)}
+.cr h3{margin:0;font-size:20px;line-height:28px;font-weight:700;letter-spacing:-.01em;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.cr h3 .jp{font-size:16px;line-height:24px;color:var(--copper);font-weight:700}
+.cr p{margin:4px 0 0;font-size:14px;line-height:20px;color:var(--mute);text-wrap:pretty}
+.cr .when{font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);white-space:nowrap}
+.menu-uv{margin:24px 0 0;font-size:14px;line-height:20px;letter-spacing:.2em;text-transform:uppercase}
+.fol{position:fixed;left:0;top:0;z-index:60;width:280px;pointer-events:none;opacity:0;transform:translate3d(-999px,-999px,0);transition:opacity .45s var(--ease)}
+.fol.on{opacity:1}
+.fol-in{border-radius:4px;padding:8px;background:url(/_blob/1a41333516ef9cacdad8a6643f85f2e0) repeat;background-size:192px 40px;box-shadow:0 0 0 1px rgba(36,76,154,.45),0 32px 64px -24px rgba(19,38,92,.6);rotate:-3deg;transition:rotate .8s var(--ease)}
+.fol-card{position:relative;aspect-ratio:4/3;background:var(--paper);overflow:hidden;display:grid;place-items:center}
+.fol-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fol-card .k{position:relative;font-size:96px;line-height:1;color:var(--cobalt)}
+.fol-card .kro{position:absolute;width:260px;height:260px;opacity:.3}
+
+.storm{position:relative;z-index:1;overflow:hidden;background:#10204E;color:#F2EEE3;padding:0}
+.storm-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:.92}
+.storm-in{position:relative;z-index:2;padding:128px 0;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:center}
+.storm-card{padding:40px;border-radius:4px;background:rgba(16,32,78,.84);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:inset 0 0 0 1px rgba(242,238,227,.18)}
+.storm .eb{color:#E8C4B8}
+.storm .t2{color:#F2EEE3}
+.storm .lead{color:rgba(242,238,227,.8)}
+.sstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:32px}
+.sstats b{display:block;font-size:36px;line-height:40px;font-weight:500;letter-spacing:-.02em;color:#F2EEE3}
+.sstats span{display:block;margin-top:4px;font-size:14px;line-height:20px;color:rgba(242,238,227,.72)}
+.wm{position:relative;justify-self:center;width:400px;height:400px;display:grid;place-items:center}
+.wm-oval{position:absolute;inset:0;border-radius:9999px;background:rgba(242,238,227,.06);box-shadow:inset 0 0 0 1px rgba(242,238,227,.25),inset 0 0 0 8px rgba(16,32,78,.4),inset 0 0 0 9px rgba(242,238,227,.18);transition:background-color 1.2s var(--ease),box-shadow 1.2s var(--ease)}
+.wm-ro{position:absolute;inset:24px;opacity:.18;animation:spin 120s linear infinite;transition:opacity 1.2s var(--ease)}
+.wm-k{position:relative;font-size:128px;line-height:1;color:rgba(242,238,227,.07);text-shadow:0 1px 0 rgba(255,255,255,.05),0 -1px 0 rgba(0,0,0,.25);transition:color 1.2s var(--ease),text-shadow 1.2s var(--ease)}
+.wm.lit .wm-oval{background:rgba(255,246,222,.55);box-shadow:inset 0 0 0 1px rgba(242,238,227,.6),0 0 80px 12px rgba(255,236,200,.35)}
+.wm.lit .wm-ro{opacity:.5}
+.wm.lit .wm-k{color:rgba(16,32,78,.55);text-shadow:0 0 1px rgba(16,32,78,.4)}
+.wm-btn{position:absolute;bottom:-64px;left:50%;transform:translateX(-50%);font-family:inherit;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:0;border-radius:9999px;cursor:pointer;font-size:14px;line-height:20px;font-weight:600;color:#10204E;background:#F2EEE3;white-space:nowrap;transition:transform .6s var(--ease)}
+.wm-btn:hover{transform:translateX(-50%) translateY(-2px)}
+.wm-btn:active{transform:translateX(-50%) scale(.97)}
+
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:48px}
+.gq{position:relative;margin:0;display:flex;flex-direction:column;gap:24px;padding:32px;border-radius:4px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line),0 24px 48px -40px rgba(19,38,92,.5);overflow:hidden;transition:transform .8s var(--ease),background-color .9s var(--ease)}
+.gq:hover{transform:translateY(-4px)}
+.gq .q-no{position:absolute;right:24px;top:24px;margin:0;font-size:12px;line-height:16px;letter-spacing:.14em;color:var(--copper)}
+.gq blockquote{margin:0;font-size:18px;line-height:28px;text-wrap:pretty;flex:1}
+.who{display:flex;align-items:center;gap:12px}
+.av{position:relative;width:48px;height:48px;border-radius:9999px;overflow:hidden;display:grid;place-items:center;background:var(--paper2);box-shadow:inset 0 0 0 1px var(--line);flex:none}
+.av img{position:absolute;width:144px;height:144px;left:-48px;top:-48px;opacity:.5}
+.av b{position:relative;font-size:14px;line-height:20px;font-weight:700}
+.who p{margin:0;font-size:14px;line-height:20px;font-weight:700}
+.who span{display:block;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:400}
+
+.bk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:64px;align-items:start}
+.steps{list-style:none;margin:40px 0 0;padding:0;display:flex;flex-direction:column;gap:24px}
+.steps li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start}
+.steps .n{font-size:48px;line-height:1;font-weight:700;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.2px var(--cobalt);background:url(/_blob/85fcbe32100ecb6061e1a412643596a1) repeat;background-size:72px 72px;-webkit-background-clip:text;background-clip:text}
+.steps h3{margin:4px 0 0;font-size:18px;line-height:28px;font-weight:700}
+.steps p{margin:4px 0 0;font-size:14px;line-height:20px;color:var(--mute);text-wrap:pretty}
+.assure{display:flex;gap:12px;align-items:flex-start;margin-top:32px;padding:16px 20px;border-radius:4px;background:var(--paper2);box-shadow:inset 0 0 0 1px var(--line);font-size:14px;line-height:20px;color:var(--mute)}
+.assure .ic{color:var(--copper);margin-top:2px}
+.assure b{color:var(--deep)}
+.bond{position:relative;border-radius:4px;padding:12px;background:url(/_blob/1a41333516ef9cacdad8a6643f85f2e0) repeat;background-size:192px 40px;box-shadow:0 0 0 1px rgba(36,76,154,.45),0 40px 80px -48px rgba(19,38,92,.6)}
+.bond-in{position:relative;background:var(--paper);box-shadow:0 0 0 1px rgba(36,76,154,.45);transition:background-color .9s var(--ease)}
+.bond-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 32px}
+.perf{position:relative;height:0;margin:0 16px;border-top:2px dotted var(--line)}
+.perf::before,.perf::after{content:"";position:absolute;top:-13px;width:24px;height:24px;border-radius:9999px;background:var(--paper2);box-shadow:inset 0 0 0 1px rgba(36,76,154,.3)}
+.perf::before{left:-30px}
+.perf::after{right:-30px}
+.bond-body{padding:8px 32px 32px}
+.fs{border:0;margin:24px 0 0;padding:0;min-width:0}
+.lg{display:block;margin:0 0 12px;padding:0;font-size:14px;line-height:20px;font-weight:700;color:var(--deep)}
+.dates{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.pill{font-family:inherit;color:var(--deep);background:var(--paper2);border:0;border-radius:4px;padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line);transition:transform .6s var(--ease),background-color .6s var(--ease),color .6s var(--ease),box-shadow .6s var(--ease)}
+.pill:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px rgba(36,76,154,.5)}
+.pill:active{transform:scale(.97)}
+.pill .dw{font-size:12px;line-height:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.pill .dd{font-size:24px;line-height:32px;font-weight:700}
+.pill .lf{font-size:12px;line-height:16px;color:var(--copper);text-align:center}
+.pill.sel{background:var(--deep);color:var(--paper);box-shadow:inset 0 0 0 1px var(--deep)}
+.pill.sel .dw{color:rgba(242,238,227,.7)}
+.ss.uv .pill.sel{color:#0B0820}
+.ss.uv .pill.sel .dw{color:rgba(11,8,32,.7)}
+.pill.sel .lf{color:var(--sky)}
+.pill:disabled{cursor:not-allowed;opacity:.45;transform:none}
+.pill:disabled .lf{color:var(--mute);text-decoration:line-through}
+.seats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.seats .pill{flex-direction:row;justify-content:space-between;padding:12px 16px}
+.seats .pill .dd{font-size:20px;line-height:28px;font-weight:500}
+.swell{display:flex;gap:8px;align-items:center;margin:12px 0 0;font-size:14px;line-height:20px;color:var(--copper)}
+.gst{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.stp{display:flex;align-items:center;gap:4px;padding:4px;border-radius:9999px;background:var(--paper2);box-shadow:inset 0 0 0 1px var(--line)}
+.stp button{width:44px;height:44px;border-radius:9999px;border:0;background:var(--paper);color:var(--deep);display:grid;place-items:center;cursor:pointer;box-shadow:0 1px 2px rgba(19,38,92,.18);transition:transform .5s var(--ease),opacity .5s var(--ease)}
+.stp button:hover{transform:scale(1.06)}
+.stp button:active{transform:scale(.94)}
+.stp button:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.stp output{min-width:40px;text-align:center;font-size:24px;line-height:32px;font-weight:500}
+.ghint{margin:0;font-size:14px;line-height:20px;color:var(--mute);max-width:260px}
+.fld{display:flex;flex-direction:column;gap:8px}
+.in{font-family:inherit;font-size:16px;line-height:24px;color:var(--deep);background:var(--paper2);border:0;border-radius:4px;padding:12px 16px;min-height:48px;box-shadow:inset 0 0 0 1px var(--line);outline:none;transition:box-shadow .5s var(--ease),background-color .5s var(--ease)}
+.in::placeholder{color:var(--mute);opacity:.75}
+.in:hover{box-shadow:inset 0 0 0 1px rgba(36,76,154,.5)}
+.in:focus{background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--cobalt),0 0 0 4px rgba(36,76,154,.14)}
+.in.err{box-shadow:inset 0 0 0 1.5px var(--copper),0 0 0 4px rgba(192,83,47,.14)}
+.err-t{display:flex;align-items:center;gap:8px;margin:0;font-size:14px;line-height:20px;color:var(--copper)}
+.sum{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px;padding-top:16px;box-shadow:inset 0 1px 0 var(--line)}
+.sum p{margin:0;font-size:12px;line-height:16px;letter-spacing:.14em;text-transform:uppercase}
+.sum b{font-size:14px;line-height:20px;font-weight:500;color:var(--copper);white-space:nowrap}
+.bond .btn{width:100%;margin-top:24px}
+.load{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%}
+.bar{width:160px;height:2px;border-radius:2px;background:rgba(242,238,227,.25);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--paper);transform-origin:left;animation:fill 1.6s var(--ease) both}
+.issued{padding:8px 0 0}
+.issued h3{margin:0;font-size:24px;line-height:32px;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+.issued p.t{margin:8px 0 0;font-size:16px;line-height:24px;color:var(--mute);text-wrap:pretty}
+.tk{position:relative;margin-top:24px;border-radius:4px;padding:8px;background:url(/_blob/2b1a0e3671ecd1f7bc6aceaa348fa15e) repeat;background-size:192px 40px;box-shadow:0 0 0 1px rgba(36,76,154,.45);animation:print 1.4s var(--ease) both}
+.tk-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--paper);box-shadow:0 0 0 1px rgba(36,76,154,.45)}
+.tk-m{position:relative;min-height:176px;overflow:hidden}
+.tk-m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tk-b{position:relative;padding:16px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:8px}
+.tk-b .adm{margin:0;font-size:12px;line-height:16px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.tk-b .big{margin:0;font-size:48px;line-height:1;font-weight:700;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.2px var(--deep);background:url(/_blob/85fcbe32100ecb6061e1a412643596a1) repeat;background-size:72px 72px;-webkit-background-clip:text;background-clip:text}
+.tk-b .meta{margin:0;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase}
+.tk-st{position:absolute;right:12px;top:12px;width:56px;height:56px;border-radius:4px;display:grid;place-items:center;color:var(--copper);font-size:24px;line-height:32px;box-shadow:inset 0 0 0 1.5px var(--copper),inset 0 0 0 4px var(--paper),inset 0 0 0 5px var(--copper);animation:stamp 1s var(--ease) .6s both}
+.lnk{font-family:inherit;font-size:14px;line-height:20px;font-weight:700;color:var(--cobalt);background:transparent;border:0;padding:8px 0;margin-top:16px;cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line);transition:text-decoration-color .5s var(--ease)}
+.lnk:hover{text-decoration-color:var(--cobalt)}
+
+.faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:64px;align-items:start}
+.qs{display:flex;flex-direction:column;gap:12px}
+.q{border-radius:4px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);transition:box-shadow .6s var(--ease),background-color .6s var(--ease)}
+.q:hover{box-shadow:inset 0 0 0 1px rgba(36,76,154,.5)}
+.q[open]{background:var(--paper2)}
+.q summary{list-style:none;cursor:pointer;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:18px;line-height:28px;font-weight:700;border-radius:4px}
+.q summary::-webkit-details-marker{display:none}
+.q .pl{display:grid;place-items:center;width:32px;height:32px;border-radius:9999px;background:var(--paper2);box-shadow:inset 0 0 0 1px var(--line);color:var(--copper);flex:none;transition:transform .7s var(--ease),background-color .7s var(--ease)}
+.q[open] .pl{transform:rotate(45deg);background:var(--paper)}
+.q::details-content{block-size:0;overflow:hidden;transition:block-size .7s var(--ease),content-visibility .7s allow-discrete}
+.q[open]::details-content{block-size:auto}
+.q .ans{margin:0;padding:0 24px 24px;font-size:16px;line-height:24px;color:var(--mute);max-width:600px;text-wrap:pretty}
+
+.ft{position:relative;z-index:1;background:var(--paper);transition:background-color .9s var(--ease)}
+.ft-top{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr));gap:32px;padding:96px 0 64px}
+.ft-top h3{margin:0 0 12px;font-size:14px;line-height:20px;font-weight:700}
+.ft-top ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.ft-top li,.ft-top a{font-size:14px;line-height:20px;color:var(--mute);text-decoration:none}
+.ft-top a{transition:color .5s var(--ease)}
+.ft-top a:hover{color:var(--deep);text-decoration:underline;text-underline-offset:4px}
+.ft-brand p{margin:16px 0 0;font-size:16px;line-height:24px;color:var(--mute);max-width:320px;text-wrap:pretty}
+.socials{display:flex;gap:8px;margin-top:24px}
+.so{width:44px;height:44px;border-radius:9999px;display:grid;place-items:center;color:var(--deep);background:var(--paper2);box-shadow:inset 0 0 0 1px var(--line);transition:transform .6s var(--ease),background-color .6s var(--ease)}
+.so:hover{transform:translateY(-2px);background:var(--paper)}
+.sea{position:relative;height:560px;overflow:hidden;background:var(--paper2)}
+.sea video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.word{position:absolute;left:0;right:0;top:24px;z-index:2;margin:0;text-align:center;font-size:128px;line-height:1;font-weight:700;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--deep);background:url(/_blob/85fcbe32100ecb6061e1a412643596a1) repeat;background-size:96px 96px;-webkit-background-clip:text;background-clip:text;animation:mesh 30s linear infinite}
+.word .jp{-webkit-text-stroke:0;color:var(--copper);background:none;font-size:96px;vertical-align:middle;margin-left:16px}
+.sea-uv{position:absolute;left:0;right:0;bottom:120px;z-index:3;text-align:center;font-size:14px;line-height:20px;letter-spacing:.3em;text-transform:uppercase;margin:0}
+.ft-bar{background:var(--deep);color:rgba(242,238,227,.78);padding:24px 0;transition:background-color .9s var(--ease)}
+.ss.uv .ft-bar{background:#1C1547;color:var(--mute)}
+.ft-bar .wrap{display:flex;flex-direction:column;gap:12px}
+.ft-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:14px;line-height:20px}
+.ft-row nav{display:flex;gap:24px}
+.ft-row a{color:rgba(242,238,227,.85);text-decoration:none}
+.ss.uv .ft-row a{color:var(--deep)}
+.ft-row a:hover{text-decoration:underline;text-underline-offset:4px;color:#F2EEE3}
+.credits{margin:0;font-size:12px;line-height:16px;opacity:.75;text-wrap:pretty}
+
+@keyframes rise{from{opacity:0;transform:translateY(64px);filter:blur(12px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes press{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes mesh{to{background-position:96px 48px}}
+@keyframes stamp{0%{opacity:0;transform:scale(1.7) rotate(-18deg)}55%{opacity:1;transform:scale(.94) rotate(-6deg)}100%{opacity:1;transform:scale(1) rotate(-8deg)}}
+@keyframes print{from{clip-path:inset(0 0 100% 0);transform:translateY(-16px)}to{clip-path:inset(0 0 0 0);transform:none}}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+@media (max-width:1100px){
+.menu,.bk,.faq,.storm-in{grid-template-columns:minmax(0,1fr)}
+.plate{position:relative;top:0;max-width:440px}
+.wm{width:320px;height:320px;margin-bottom:64px}
+.wm-k{font-size:96px}
+.quotes{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ft-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero-uv{right:8%}
+}
+@media (max-width:860px){
+.links{display:none}
+.burger{display:block}
+.uvb .uvt{display:none}
+.nav{gap:8px}
+.nt-in{grid-template-columns:minmax(0,1fr)}
+.nt-m{aspect-ratio:16/10}
+.voy-head{flex-direction:column;align-items:flex-start}
+.vf-side,.vf-l{display:none}
+.denom{right:32px;top:96px}
+.dn{font-size:60px}
+.dn .y{font-size:36px}
+.hint{display:none}
+}
+@media (max-width:720px){
+.wrap{padding:0 16px}
+.vf{inset:8px}
+.vf-r{right:16px}
+.hero{height:auto;min-height:840px;cursor:auto;display:flex;flex-direction:column;justify-content:flex-end;padding:400px 16px 16px}
+.panel{position:relative;left:auto;bottom:auto;width:100%}
+.panel-in{padding:24px 20px}
+.h1{font-size:36px;line-height:40px}
+.t2{font-size:36px;line-height:40px}
+.tag p.big{font-size:36px;line-height:40px}
+.sec,.tag{padding:64px 0}
+.track{padding:32px 16px 16px;gap:16px}
+.nt{width:88vw}
+.nt-time{font-size:48px}
+.quotes,.sstats{grid-template-columns:minmax(0,1fr)}
+.dates{gap:4px}
+.pill{padding:12px 4px}
+.pill .dd{font-size:20px;line-height:28px}
+.bond-top,.bond-body{padding-left:16px;padding-right:16px}
+.tk-in{grid-template-columns:minmax(0,1fr)}
+.storm-in{padding:64px 0}
+.storm-card{padding:24px}
+.word{font-size:60px}
+.word .jp{font-size:48px;margin-left:8px}
+.sea{height:360px}
+.ft-top{grid-template-columns:minmax(0,1fr);padding:64px 0 48px}
+.cr{grid-template-columns:32px minmax(0,1fr)}
+.cr .when{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){
+.ss *,.ss *::before,.ss *::after{animation:none !important;transition:none !important}
+.rv{opacity:1;transform:none;filter:none}
+.w{opacity:1}
+}
+</style>
+</helmet>
+<div class="{{ rootCls }}" ref="{{ setRoot }}">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i>
+<p class="vf-side mono">Shiosai tide series · printed in Manazuru · 潮騒</p>
+<p class="vf-l mono" data-plate="">Plate 0 · The boat</p>
+<p class="vf-r mono" data-serial="">SS 2610 000000</p>
+</div>
+
+<header>
+<nav class="nav" aria-label="Primary">
+<a class="brand" href="#top" aria-label="Shiosai, back to top"><span class="seal jp" aria-hidden="true">潮</span><span>Shiosai</span></a>
+<div class="links">
+<sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+<a class="lk" href="{{ n.href }}" aria-current="{{ n.current }}">{{ n.label }}</a>
+</sc-for>
+</div>
+<button class="uvb" type="button" aria-pressed="{{ uvPressed }}" onClick="{{ toggleUv }}"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0012 3z"></path></svg><span class="uvt">UV light</span></button>
+<a class="btn-sm" href="#book">Book a table</a>
+<button class="{{ burgerCls }}" type="button" aria-label="Open menu" aria-expanded="{{ menuExpanded }}" aria-controls="mm" onClick="{{ toggleMenu }}"><span></span><span></span></button>
+</nav>
+<div id="mm" class="{{ overlayCls }}">
+<a class="olk" href="#voyage" onClick="{{ closeMenu }}">The voyage</a>
+<a class="olk" href="#menu" onClick="{{ closeMenu }}">Tide menu</a>
+<a class="olk" href="#storm" onClick="{{ closeMenu }}">Storm clause</a>
+<a class="olk" href="#visit" onClick="{{ closeMenu }}">Visit</a>
+<a class="olk cta" href="#book" onClick="{{ closeMenu }}">Book a table</a>
+</div>
+</header>
+
+<main id="main">
+<section id="top" class="{{ heroCls }}" aria-labelledby="hero-h" onPointerMove="{{ onLens }}" onPointerLeave="{{ offLens }}">
+<video class="media" src="/_blob/28cc1bb6f2e75bd5cc349e05bd9b5936" poster="/_blob/dbc26528ae6331a184ed1b49a533bec1" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="auto" aria-hidden="true"></video>
+<div class="fibers uvm" aria-hidden="true"></div>
+<div class="hero-uv uvm jp glow" aria-hidden="true"><span>潮騒</span><p class="mono">Genuine · tide series</p></div>
+<div class="denom" aria-hidden="true">
+<p class="dn"><span class="y">¥</span>16,500</p>
+<p class="dl mono">Nine courses · <b>one boat</b></p>
+</div>
+<div class="panel">
+<div class="panel-band" aria-hidden="true"></div>
+<div class="panel-in">
+<img class="panel-ro" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true">
+<div class="row"><p class="eyebrow mono">Shiosai · Manazuru harbour</p><p class="serial mono">No. 276 · 2026</p></div>
+<h1 id="hero-h" class="h1"><span class="ln">Tonight's dinner</span><span class="ln">left the harbour</span><span class="ln">at five this morning.</span></h1>
+<p class="sub">A twenty two seat dining room on the pier at Manazuru. Our own boat fishes at dawn, and the nine course tide menu is written when it comes back.</p>
+<div class="cta-row">
+<a class="btn" href="#book">Book a table<span class="arr" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+<p class="proof"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17c2 1.3 4 1.3 6 0s4-1.3 6 0 4 1.3 6 0"></path><path d="M5 13l2-6h10l2 6"></path><path d="M12 7V3"></path></svg>The boat has sailed 276 mornings this year</p>
+</div>
+</div>
+</div>
+<p class="hint mono" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg>Move the loupe across the plate</p>
+<div class="{{ lensCls }}" data-lens="" aria-hidden="true">
+<div class="lens-img" data-lens-img=""></div>
+<svg viewBox="0 0 240 240"><defs><path id="lr" d="M120 120m-112 0a112 112 0 1 1 224 0a112 112 0 1 1 -224 0"></path></defs><circle class="lens-ring" cx="120" cy="120" r="118"></circle><circle class="lens-ring" cx="120" cy="120" r="107"></circle><text><textPath href="#lr">SHIOSAI TIDE SERIES · GENUINE INTAGLIO · MANAZURU · 潮騒 · SHIOSAI TIDE SERIES · GENUINE INTAGLIO ·</textPath></text></svg>
+<span class="lens-cross"></span>
+</div>
+</section>
+
+<div class="tide" aria-label="Harbour conditions this morning">
+<div class="tide-t mono">
+<span>Manazuru harbour <b>Sat 24 Oct</b></span><span>Boat out <b>05:10</b></span><span>Sunrise <b>05:57</b></span><span>High tide <b>06:48 · 1.42 m</b></span><span>Water <b>19.6 °C</b></span><span>Wind <b>NE 9 kn</b></span><span>Swell <b>0.8 m</b></span><span>Back in harbour <b>11:20</b></span>
+<span>Manazuru harbour <b>Sat 24 Oct</b></span><span>Boat out <b>05:10</b></span><span>Sunrise <b>05:57</b></span><span>High tide <b>06:48 · 1.42 m</b></span><span>Water <b>19.6 °C</b></span><span>Wind <b>NE 9 kn</b></span><span>Swell <b>0.8 m</b></span><span>Back in harbour <b>11:20</b></span>
+</div>
+</div>
+
+<section class="tag" aria-label="How we cook" data-tagline="">
+<img class="tag-ro media" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true">
+<div class="wrap">
+<p class="eb mono">The only rule in the kitchen</p>
+<p class="big"><sc-for list="{{ words }}" as="w" hint-placeholder-count="24"><span class="{{ w.cls }}" data-w="">{{ w.t }} </span></sc-for></p>
+</div>
+</section>
+
+<section id="voyage" class="sec" aria-labelledby="voy-h" style="padding-bottom: 64px">
+<div class="wrap voy-head">
+<div class="rv">
+<p class="eb mono">Plate I · The voyage</p>
+<h2 id="voy-h" class="t2">One day, printed in four notes.</h2>
+<p class="lead">Drag through the series. Every note is a moment between the harbour wall at five and the first plate at half past five in the evening.</p>
+</div>
+<div class="ctrl rv">
+<p class="mono" aria-live="polite">{{ noteLabel }}</p>
+<button class="rnd" type="button" aria-label="Previous note" onClick="{{ prevNote }}" disabled="{{ prevOff }}"><svg class="ic" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></button>
+<button class="rnd" type="button" aria-label="Next note" onClick="{{ nextNote }}" disabled="{{ nextOff }}"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+</div>
+</div>
+<div class="track" data-track="" tabindex="0" aria-label="The voyage, four notes">
+<article class="{{ n0 }}"><div class="nt-in">
+<div class="nt-m"><video class="media" src="/_blob/38a78ef2eb5b41fedcf97eef6bc91a0a" poster="/_blob/e423f8e2bd7b4ec81dcac0749d08af89" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="metadata" aria-label="Engraved slow motion footage of a fishing boat crossing rough water"></video><p class="chip mono" style="left: 16px; top: 16px">Note I · 1,000 metres out</p></div>
+<div class="nt-b"><img class="nt-ro" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true"><div style="position: relative"><p class="nt-time mono">05:10</p><h3 style="margin-top: 16px">Shiosai Maru leaves the wall</h3><p class="d">Captain Kenta Hamada takes the boat out in the dark with two crew. From here, the sea writes the menu.</p></div><div class="nt-foot"><p class="eyebrow mono">Departure</p><p class="nt-k jp" aria-hidden="true">出</p></div></div>
+</div></article>
+<article class="{{ n1 }}"><div class="nt-in">
+<div class="nt-m"><img class="media hue-teal" src="/_blob/bc67ca78401389431aaa1a57cdc5bbba" alt="Engraving of a small fishing boat hauling a set net with its crane" loading="lazy"><p class="chip mono" style="left: 16px; top: 16px">Note II · net 3 of 4</p></div>
+<div class="nt-b"><img class="nt-ro" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true"><div style="position: relative"><p class="nt-time mono">07:40</p><h3 style="margin-top: 16px">The set nets come up</h3><p class="d">Our nets sit three kilometres offshore. We lift them once and keep only what tonight needs. The rest goes back alive.</p></div><div class="nt-foot"><p class="eyebrow mono">Hauling</p><p class="nt-k jp" aria-hidden="true">網</p></div></div>
+</div></article>
+<article class="{{ n2 }}"><div class="nt-in">
+<div class="nt-m"><video class="media hue-violet" src="/_blob/7199e8db42de09f333740428c56a35c0" poster="/_blob/3658341c45c47c5aaa8f88a79852784d" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="metadata" aria-label="Engraving of fishing boats moored along a narrow harbour, the water gently moving"></video><p class="chip mono" style="left: 16px; top: 16px">Note III · pier 2</p></div>
+<div class="nt-b"><img class="nt-ro" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true"><div style="position: relative"><p class="nt-time mono">11:20</p><h3 style="margin-top: 16px">Back in harbour</h3><p class="d">Every fish is bled on the pier and on ice within four minutes of landing. The kitchen gets the list by noon.</p></div><div class="nt-foot"><p class="eyebrow mono">Landing</p><p class="nt-k jp" aria-hidden="true">港</p></div></div>
+</div></article>
+<article class="{{ n3 }}"><div class="nt-in">
+<div class="nt-m"><video class="media" src="/_blob/173184cead51b958227f14063bb44499" poster="/_blob/c2a621a2bea5f307809b7f2b87e5b537" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="metadata" aria-label="Engraved slow motion footage of a small boat drifting under a pink evening sky"></video><p class="chip mono" style="left: 16px; top: 16px">Note IV · first seating</p></div>
+<div class="nt-b"><img class="nt-ro" src="/_blob/52849eaae06bd28d7a80fb88ccc3422f" alt="" aria-hidden="true"><div style="position: relative"><p class="nt-time mono">17:30</p><h3 style="margin-top: 16px">The table</h3><p class="d">Twenty two seats face the water as the light goes. The first course is whatever came up first.</p></div><div class="nt-foot"><p class="eyebrow mono">Service</p><p class="nt-k jp" aria-hidden="true">膳</p></div></div>
+</div></article>
+</div>
+<div class="dots">
+<sc-for list="{{ dotItems }}" as="d" hint-placeholder-count="4">
+<button class="{{ d.cls }}" type="button" aria-label="{{ d.label }}" onClick="{{ d.go }}"><span></span></button>
+</sc-for>
+</div>
+</section>
+
+<section id="menu" class="sec" aria-labelledby="menu-h">
+<div class="wrap menu">
+<div class="plate rv">
+<figure style="margin: 0">
+<div class="frame"><div class="frame-in"><img class="media" src="/_blob/b460d253c1bb8e08d60e73247a1cdec4" alt="Engraving after Hiroshige of sailboats crossing a wide bay below Mount Fuji, pines on the shore" loading="lazy"></div></div>
+<figcaption class="mono">Plate II · After Hiroshige, Kuroto bay</figcaption>
+</figure>
+<div class="price"><b class="mono">¥16,500</b><span>per guest, nine courses<br>sake pairing ¥7,800</span></div>
+</div>
+<div>
+<div class="rv">
+<p class="eb mono">Plate II · The tide menu</p>
+<h2 id="menu-h" class="t2">Nine courses. Each one has a catch time.</h2>
+<p class="lead">This is Friday's menu, written at 11:52. Hover a course to see the plate. Tomorrow it will be different, because the sea will be.</p>
+</div>
+<ol class="courses rv" style="transition-delay: 120ms">
+<sc-for list="{{ courses }}" as="c" hint-placeholder-count="9">
+<li class="cr" onPointerEnter="{{ c.enter }}" onPointerLeave="{{ c.leave }}"><span class="no mono">{{ c.no }}</span><div><h3>{{ c.name }}<span class="jp">{{ c.k }}</span></h3><p>{{ c.d }}</p></div><span class="when mono">{{ c.when }}</span></li>
+</sc-for>
+</ol>
+<p class="menu-uv uvm glow mono" aria-hidden="true">No substitutions · the sea decides</p>
+</div>
+</div>
+<div class="{{ folCls }}" data-fol="" aria-hidden="true">
+<div class="fol-in"><div class="fol-card">
+<sc-if value="{{ fol.hasImg }}" hint-placeholder-val="{{ false }}"><img class="media" src="{{ fol.src }}" alt=""></sc-if>
+<sc-if value="{{ fol.noImg }}" hint-placeholder-val="{{ true }}"><img class="kro media" src="/_blob/52849eaae06bd28d7a80fb88ccc3422f" alt=""><span class="k jp">{{ fol.k }}</span></sc-if>
+</div></div>
+</div>
+</section>
+
+<section id="storm" class="storm" aria-labelledby="storm-h">
+<img class="storm-img media" src="/_blob/90f4b88fdd93a6e25cbfd38e19fbedfd" alt="Night engraving of storm waves breaking over a harbour wall and its lighthouse" loading="lazy">
+<div class="wrap storm-in">
+<div class="storm-card rv">
+<p class="eb mono">Plate III · The storm clause</p>
+<h2 id="storm-h" class="t2">When the sea says no, we close.</h2>
+<p class="lead">About twenty one mornings a year the harbour master keeps us in. On those days we cancel by 09:00 and your deposit is back on your card the same afternoon. No credit notes, no rebooking fee.</p>
+<div class="sstats">
+<div><b class="mono">21</b><span>storm days in 2025</span></div>
+<div><b class="mono">¥0</b><span>kept from cancelled guests</span></div>
+<div><b class="mono">09:00</b><span>latest we will call you</span></div>
+</div>
+</div>
+<div class="{{ wmCls }}">
+<span class="wm-oval" aria-hidden="true"></span>
+<img class="wm-ro" src="/_blob/c05d9437877dcce1a1a34dbfd745194a" alt="" aria-hidden="true">
+<span class="wm-k jp" aria-hidden="true">潮</span>
+<button class="wm-btn" type="button" aria-pressed="{{ holdPressed }}" onClick="{{ toggleHold }}"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>{{ holdLabel }}</button>
+</div>
+</div>
+</section>
+
+<section id="guests" class="sec" aria-labelledby="guests-h">
+<div class="wrap">
+<div class="rv">
+<p class="eb mono">Plate IV · Countersigned</p>
+<h2 id="guests-h" class="t2">Guests who came for the boat and stayed for the bones.</h2>
+</div>
+<div class="quotes">
+<figure class="gq rv"><p class="q-no mono">No. 0412</p><blockquote>The kinmedai was caught at 07:51 and grilled at 19:20. They told us both times, and I have never paid so much attention to a fish.</blockquote><figcaption class="who"><span class="av"><img class="media" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true" style="transform: rotate(24deg)"><b>YT</b></span><p>Yuki Tanabe<span class="mono">Yokohama · 19 Sep 2026</span></p></figcaption></figure>
+<figure class="gq rv" style="transition-delay: 100ms"><p class="q-no mono">No. 0588</p><blockquote>Our first booking was storm cancelled. The refund landed before lunch, and the second time the sea was flat and the abalone was absurd.</blockquote><figcaption class="who"><span class="av"><img class="media" src="/_blob/52849eaae06bd28d7a80fb88ccc3422f" alt="" aria-hidden="true" style="transform: rotate(80deg)"><b>LV</b></span><p>Leon Vargas<span class="mono">Medellín · 2 Aug 2026</span></p></figcaption></figure>
+<figure class="gq rv" style="transition-delay: 200ms"><p class="q-no mono">No. 0731</p><blockquote>We sat by the window for the 17:30 seating and watched the boat being washed down while we ate what it brought in.</blockquote><figcaption class="who"><span class="av"><img class="media" src="/_blob/ff3de528af7fcee9595877d7350981b8" alt="" aria-hidden="true" style="transform: rotate(150deg)"><b>PR</b></span><p>Priya Raman<span class="mono">Singapore · 11 Jul 2026</span></p></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section id="book" class="sec" aria-labelledby="book-h" style="padding-top: 0">
+<div class="wrap bk">
+<div class="rv">
+<p class="eb mono">Plate V · Book a table</p>
+<h2 id="book-h" class="t2">Book a table on the pier.</h2>
+<p class="lead">Wednesday to Sunday, two seatings. Tables open thirty days ahead at 10:00 Japan time.</p>
+<ol class="steps">
+<li><span class="n mono">01</span><div><h3>Choose a seating</h3><p>17:30 for the sunset side, 20:00 for the harbour lights.</p></div></li>
+<li><span class="n mono">02</span><div><h3>Hold it with ¥5,000</h3><p>Per guest, taken from the bill on the night.</p></div></li>
+<li><span class="n mono">03</span><div><h3>Watch the forecast with us</h3><p>If the boat cannot sail, we call by 09:00 and refund in full.</p></div></li>
+</ol>
+<p class="assure"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg><span><b>Free cancellation up to 72 hours before.</b> Storm closures are always refunded, whatever the notice.</span></p>
+</div>
+<div class="bond rv" style="transition-delay: 120ms">
+<div class="bond-in">
+<div class="bond-top"><p class="eyebrow mono">Table note · Shiosai</p><p class="serial mono">{{ bondSerial }}</p></div>
+<div class="perf" aria-hidden="true"></div>
+<div class="bond-body">
+<sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
+<div class="issued" role="status">
+<h3>{{ doneTitle }}</h3>
+<p class="t">{{ doneBody }}</p>
+<div class="tk"><div class="tk-in">
+<div class="tk-m"><img class="media" src="/_blob/a60aec88a29e84874b06143b4f6a1bfe" alt=""></div>
+<div class="tk-b"><span class="tk-st jp" aria-hidden="true">発</span><p class="adm mono">Admit</p><p class="big mono">{{ guests }}</p><p class="meta mono">{{ ticketMeta }}</p><p class="serial mono">{{ serial }}</p></div>
+</div></div>
+<button class="lnk" type="button" onClick="{{ reset }}">Change details</button>
+</div>
+</sc-if>
+<sc-if value="{{ notDone }}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{ submit }}" aria-describedby="sum-t">
+<fieldset class="fs">
+<legend class="lg">Date</legend>
+<div class="dates">
+<sc-for list="{{ dateItems }}" as="d" hint-placeholder-count="5">
+<button class="{{ d.cls }}" type="button" onClick="{{ d.pick }}" disabled="{{ d.disabled }}" aria-pressed="{{ d.pressed }}" aria-label="{{ d.aria }}"><span class="dw mono">{{ d.dow }}</span><span class="dd">{{ d.day }}</span><span class="lf">{{ d.left }}</span></button>
+</sc-for>
+</div>
+<sc-if value="{{ swell }}" hint-placeholder-val="{{ false }}"><p class="swell"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15c2 1.3 4 1.3 6 0s4-1.3 6 0 4 1.3 6 0M3 19c2 1.3 4 1.3 6 0s4-1.3 6 0 4 1.3 6 0M7 11a5 5 0 019.6-2"></path></svg>Swell of 2.1 m forecast. If the boat stays in, you get a full refund by 09:00.</p></sc-if>
+</fieldset>
+<fieldset class="fs">
+<legend class="lg">Seating</legend>
+<div class="seats">
+<sc-for list="{{ seatItems }}" as="s" hint-placeholder-count="2">
+<button class="{{ s.cls }}" type="button" onClick="{{ s.pick }}" disabled="{{ s.disabled }}" aria-pressed="{{ s.pressed }}"><span class="dd mono">{{ s.time }}</span><span class="lf">{{ s.left }}</span></button>
+</sc-for>
+</div>
+</fieldset>
+<fieldset class="fs">
+<legend class="lg">Guests</legend>
+<div class="gst">
+<div class="stp">
+<button type="button" aria-label="Remove a guest" onClick="{{ dec }}" disabled="{{ decOff }}"><svg class="ic" viewBox="0 0 24 24"><path d="M6 12h12"></path></svg></button>
+<output class="mono" aria-live="polite">{{ guests }}</output>
+<button type="button" aria-label="Add a guest" onClick="{{ inc }}" disabled="{{ incOff }}"><svg class="ic" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"></path></svg></button>
+</div>
+<p class="ghint">{{ guestHint }}</p>
+</div>
+</fieldset>
+<div class="fs fld">
+<label class="lg" for="sem" style="margin: 0">Email for the table note</label>
+<input id="sem" class="{{ inCls }}" type="text" inputmode="email" autocomplete="email" placeholder="name@domain.com" value="{{ email }}" onChange="{{ onEmail }}" aria-invalid="{{ invalid }}" aria-describedby="sem-err">
+<div id="sem-err" aria-live="polite">
+<sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}"><p class="err-t" role="alert"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.5v.01"></path></svg>{{ error }}</p></sc-if>
+</div>
+</div>
+<div class="sum"><p id="sum-t" class="mono">{{ summary }}</p><b class="mono">{{ holdText }}</b></div>
+<button class="btn" type="submit" disabled="{{ isLoading }}">
+<sc-if value="{{ isLoading }}" hint-placeholder-val="{{ false }}"><span class="load"><span>Printing your table note</span><span class="bar"><i></i></span></span></sc-if>
+<sc-if value="{{ notLoading }}" hint-placeholder-val="{{ true }}"><span style="display: contents">Book a table<span class="arr" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span></sc-if>
+</button>
+</form>
+</sc-if>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="sec" aria-labelledby="faq-h" style="padding-top: 0">
+<div class="wrap faq">
+<div class="rv">
+<p class="eb mono">Plate VI · Questions</p>
+<h2 id="faq-h" class="t2">Before you come to the pier.</h2>
+<p class="lead">Anything else, write to <a href="mailto:table@shiosai.jp">table@shiosai.jp</a> or call +81 465 68 2914 after 13:00.</p>
+</div>
+<div class="qs rv" style="transition-delay: 120ms">
+<details class="q" open=""><summary>How do I know if the boat sailed?<span class="pl" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="ans">The harbour strip at the top of this page updates at 05:30 every morning. If we close, we also call and email you by 09:00.</p></details>
+<details class="q"><summary>What does the tide menu cost?<span class="pl" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="ans">¥16,500 per guest for nine courses. The sake pairing is ¥7,800 for six pours. Tax and service are included.</p></details>
+<details class="q"><summary>Can you work around allergies?<span class="pl" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="ans">Tell us when you book. Shellfish and gluten allergies need 72 hours, because we change what we keep from the nets.</p></details>
+<details class="q"><summary>How do I get to Manazuru?<span class="pl" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="ans">Ninety minutes from Tokyo on the JR Tokaido line, then an eight minute walk down to pier 2. We send a map with your table note.</p></details>
+<details class="q"><summary>Can I bring children?<span class="pl" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="ans">Yes, from age eight at the 17:30 seating. We serve a shorter five course note for them at ¥6,600.</p></details>
+<details class="q"><summary>Can I visit the boat?<span class="pl" aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="ans">On Sundays two guests can join the crew at 05:10. Ask when you book. It depends on the weather and the captain.</p></details>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="visit" class="ft">
+<div class="wrap ft-top">
+<div class="ft-brand">
+<a class="brand" href="#top"><span class="seal jp" aria-hidden="true">潮</span>Shiosai</a>
+<p>Seafood from our own boat, cooked on the pier where it lands. Manazuru, Kanagawa.</p>
+<div class="socials">
+<a class="so" href="https://www.instagram.com/" aria-label="Shiosai on Instagram"><svg class="ic" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r=".6"></circle></svg></a>
+<a class="so" href="mailto:table@shiosai.jp" aria-label="Email Shiosai"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3.5 6.5l8.5 6.5 8.5-6.5"></path></svg></a>
+<a class="so" href="https://maps.google.com/?q=Manazuru+Port" aria-label="Open the map"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5a7 7 0 00-14 0C5 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></a>
+</div>
+</div>
+<div><h3>Visit</h3><ul><li>Pier 2, Manazuru Port</li><li>Kanagawa 259 0201</li><li><a href="https://maps.google.com/?q=Manazuru+Port">Directions</a></li></ul></div>
+<div><h3>Hours</h3><ul><li class="mono">Wed to Sun</li><li class="mono">17:30 · 20:00</li><li>Closed on storm days</li></ul></div>
+<div><h3>Table</h3><ul><li><a href="#book">Book a table</a></li><li><a href="#menu">Tide menu</a></li><li><a href="#storm">Storm clause</a></li><li><a href="tel:+81465682914">+81 465 68 2914</a></li></ul></div>
+</div>
+<div class="sea">
+<video class="media" src="/_blob/7199e8db42de09f333740428c56a35c0" poster="/_blob/3658341c45c47c5aaa8f88a79852784d" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="metadata" aria-hidden="true"></video>
+<p class="word" aria-hidden="true">Shiosai<span class="jp">潮騒</span></p>
+<div class="fibers uvm" aria-hidden="true"></div>
+<p class="sea-uv uvm glow mono" aria-hidden="true">Printed by hand on the pier · every note is genuine</p>
+</div>
+<div class="ft-bar">
+<div class="wrap">
+<div class="ft-row"><span>© 2026 Shiosai Manazuru K.K.</span><nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/cookies">Cookies</a></nav></div>
+<p class="credits">Engravings and slow loops rendered in house from Wikimedia Commons: ship at sea off Kazusa and Kuroto bay after Hokusai and Hiroshige (public domain); harbour by ccfarmer (CC BY 3.0); set net boat by Miyuki Meinaka (CC BY SA 4.0); lighthouse by Francisco Anzola (CC BY 2.0); nigiri by Zheng Zhou (CC BY SA 4.0), takaokun (CC BY 2.0) and Alpha from Melbourne (CC BY SA 2.0); footage by Maoileann, Myousry6666 and Amada44 (CC BY SA 4.0).</p>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"uvOnLoad":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":8600}}'>
+const WORDS = 'Our boat leaves at five. Whatever the sea gives back by noon is what we cook tonight, and nothing else.'.split(' ');
+const COPPER_WORDS = { 'five.': 1, 'noon': 1, 'tonight,': 1 };
+const NAV = [
+  { id: 'voyage', label: 'The voyage' },
+  { id: 'menu', label: 'Tide menu' },
+  { id: 'storm', label: 'Storm clause' },
+  { id: 'visit', label: 'Visit' }
+];
+const PLATES = [
+  { id: 'top', label: 'Plate 0 · The boat' },
+  { id: 'voyage', label: 'Plate I · The voyage' },
+  { id: 'menu', label: 'Plate II · The tide menu' },
+  { id: 'storm', label: 'Plate III · The storm clause' },
+  { id: 'guests', label: 'Plate IV · Countersigned' },
+  { id: 'book', label: 'Plate V · Book a table' },
+  { id: 'faq', label: 'Plate VI · Questions' },
+  { id: 'visit', label: 'Plate VII · The pier' }
+];
+const COURSES = [
+  { no: '01', name: 'Shirasu', k: 'しらす', d: 'Whitebait from net 1 with yuzu and cold dashi jelly.', when: 'Net 1 · 07:42', src: '' },
+  { no: '02', name: 'Kohada', k: '小鰭', d: 'Gizzard shad cured three days, pressed over warm rice.', when: 'Cured · Tue', src: '/_blob/9a6da5c9e8dd555bab6321aa23debfd8' },
+  { no: '03', name: 'Kuruma ebi', k: '車海老', d: 'Tiger prawn poached on the pier the moment it lands.', when: 'Pier · 11:31', src: '/_blob/39c60818bc9f0112f1c443f2497d2ddd' },
+  { no: '04', name: 'Owan', k: '椀', d: 'Clear soup made from the morning bones and kombu.', when: 'Stock · 12:10', src: '' },
+  { no: '05', name: 'Awabi', k: '鮑', d: 'Abalone steamed four hours in sake, liver sauce.', when: 'Diver · 09:05', src: '/_blob/0636ea0566c5466982eeaa54b847cbd1' },
+  { no: '06', name: 'Kinmedai', k: '金目鯛', d: 'Splendid alfonsino grilled skin first over binchōtan.', when: 'Net 3 · 07:51', src: '' },
+  { no: '07', name: 'Maguro', k: '鮪', d: 'Bluefin from Sagami Bay, aged six days in the cabinet.', when: 'Aged · 6 d', src: '/_blob/a0ca2ae88a1d83fef80401f7c547f18a' },
+  { no: '08', name: 'Unagi', k: '鰻', d: 'Eel lacquered over charcoal with a tare kept since 2011.', when: 'Charcoal · 19:00', src: '/_blob/e77bd933ff9a870c1971a392322e7eb8' },
+  { no: '09', name: 'Mizugashi', k: '水菓子', d: 'Warabi mochi with salt from the bay and black sugar.', when: 'Salt · Manazuru', src: '' }
+];
+const DATES = [
+  { dow: 'Sun', day: '25', mon: 'Oct', long: 'Sunday 25 October', seats: { '17:30': 0, '20:00': 2 } },
+  { dow: 'Wed', day: '28', mon: 'Oct', long: 'Wednesday 28 October', seats: { '17:30': 8, '20:00': 5 } },
+  { dow: 'Thu', day: '29', mon: 'Oct', long: 'Thursday 29 October', seats: { '17:30': 11, '20:00': 9 }, swell: true },
+  { dow: 'Fri', day: '30', mon: 'Oct', long: 'Friday 30 October', seats: { '17:30': 0, '20:00': 0 } },
+  { dow: 'Sat', day: '31', mon: 'Oct', long: 'Saturday 31 October', seats: { '17:30': 3, '20:00': 1 } }
+];
+const TIMES = ['17:30', '20:00'];
+const ROMAN = ['I', 'II', 'III', 'IV'];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { uv: !!props.uvOnLoad, menuOpen: false, lit: 0, active: '', note: 0, hold: false, hover: -1, lens: false, coarse: false, date: 1, seating: '20:00', guests: 2, email: '', error: '', status: 'idle', serial: '' };
+    this.root = null;
+  }
+
+  componentDidMount() {
+    const root = this.root;
+    if (!root) return;
+    this.reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    this.fine = !!(window.matchMedia && window.matchMedia('(pointer: fine)').matches);
+    if (!this.fine) this.setState({ coarse: true });
+    const hasIO = 'IntersectionObserver' in window;
+    const rv = root.querySelectorAll('.rv');
+    if (this.reduce || !hasIO) {
+      rv.forEach((el) => el.classList.add('in'));
+    } else {
+      this.io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            this.io.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+      rv.forEach((el) => this.io.observe(el));
+    }
+    const vids = root.querySelectorAll('video');
+    vids.forEach((v) => { v.muted = true; v.defaultMuted = true; v.playsInline = true; v.loop = true; });
+    if (!this.reduce && hasIO) {
+      this.vio = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          const v = e.target;
+          if (e.isIntersecting) {
+            const p = v.play();
+            if (p && p.catch) p.catch(() => {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: 0.1 });
+      vids.forEach((v) => this.vio.observe(v));
+    }
+    this.track = root.querySelector('[data-track]');
+    this.lens = root.querySelector('[data-lens]');
+    this.lensImg = root.querySelector('[data-lens-img]');
+    this.fol = root.querySelector('[data-fol]');
+    this.serialEl = root.querySelector('[data-serial]');
+    this.plateEl = root.querySelector('[data-plate]');
+    if (this.track) {
+      this.onTrack = () => {
+        if (this.trackRaf) return;
+        this.trackRaf = requestAnimationFrame(() => { this.trackRaf = 0; this.measureTrack(); });
+      };
+      this.track.addEventListener('scroll', this.onTrack, { passive: true });
+      this.onDown = (e) => {
+        if (e.pointerType !== 'mouse' || e.button !== 0) return;
+        this.drag = { x: e.clientX, left: this.track.scrollLeft, moved: false };
+        this.track.classList.add('drag');
+      };
+      this.onMove = (e) => {
+        if (!this.drag) return;
+        const dx = e.clientX - this.drag.x;
+        if (Math.abs(dx) > 3) this.drag.moved = true;
+        this.track.scrollLeft = this.drag.left - dx;
+      };
+      this.onUp = () => {
+        if (!this.drag) return;
+        this.drag = null;
+        this.track.classList.remove('drag');
+        this.goNote(this.state.note);
+      };
+      this.track.addEventListener('pointerdown', this.onDown);
+      window.addEventListener('pointermove', this.onMove);
+      window.addEventListener('pointerup', this.onUp);
+    }
+    this.onFolMove = (e) => {
+      if (this.fol && this.state.hover >= 0) this.fol.style.transform = 'translate3d(' + (e.clientX + 32) + 'px,' + (e.clientY - 120) + 'px,0)';
+    };
+    window.addEventListener('pointermove', this.onFolMove, { passive: true });
+    this.onScroll = () => {
+      if (this.raf) return;
+      this.raf = requestAnimationFrame(() => { this.raf = 0; this.measure(); });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', this.onScroll);
+    this.measure();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    document.removeEventListener('scroll', this.onScroll, { capture: true });
+    window.removeEventListener('resize', this.onScroll);
+    window.removeEventListener('pointermove', this.onFolMove);
+    if (this.track) {
+      this.track.removeEventListener('scroll', this.onTrack);
+      this.track.removeEventListener('pointerdown', this.onDown);
+      window.removeEventListener('pointermove', this.onMove);
+      window.removeEventListener('pointerup', this.onUp);
+    }
+    if (this.raf) cancelAnimationFrame(this.raf);
+    if (this.trackRaf) cancelAnimationFrame(this.trackRaf);
+    if (this.io) this.io.disconnect();
+    if (this.vio) this.vio.disconnect();
+    clearTimeout(this.timer);
+  }
+
+  measure() {
+    const root = this.root;
+    if (!root) return;
+    const vh = window.innerHeight || 900;
+    const top = Math.max(0, -root.getBoundingClientRect().top);
+    if (this.serialEl) this.serialEl.textContent = 'SS 2610 ' + String(Math.floor(top)).padStart(6, '0');
+    let plate = PLATES[0].label;
+    PLATES.forEach((p) => {
+      const el = root.querySelector('#' + p.id);
+      if (el && el.getBoundingClientRect().top < vh * 0.5) plate = p.label;
+    });
+    if (this.plateEl && this.plateEl.textContent !== plate) this.plateEl.textContent = plate;
+    let lit = this.state.lit;
+    const tag = root.querySelector('[data-tagline] p.big');
+    if (tag) {
+      if (this.reduce) {
+        lit = WORDS.length;
+      } else {
+        const box = tag.getBoundingClientRect();
+        const trigger = vh * 0.62;
+        let n = 0;
+        tag.querySelectorAll('[data-w]').forEach((w) => {
+          const r = w.getBoundingClientRect();
+          const sweep = box.width ? ((r.left - box.left) / box.width) * r.height : 0;
+          if (r.top + sweep < trigger) n += 1;
+        });
+        lit = Math.max(lit, n);
+      }
+    }
+    let active = '';
+    NAV.forEach((n) => {
+      const el = root.querySelector('#' + n.id);
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.45 && r.bottom > vh * 0.45) active = n.id;
+    });
+    if (lit !== this.state.lit || active !== this.state.active) this.setState({ lit, active });
+  }
+
+  noteWidth() {
+    const first = this.track && this.track.querySelector('.nt');
+    return first ? first.getBoundingClientRect().width + 32 : 1;
+  }
+
+  measureTrack() {
+    if (!this.track) return;
+    const i = Math.max(0, Math.min(3, Math.round(this.track.scrollLeft / this.noteWidth())));
+    if (i !== this.state.note) this.setState({ note: i });
+  }
+
+  goNote(i) {
+    if (!this.track) return;
+    const n = Math.max(0, Math.min(3, i));
+    this.track.scrollTo({ left: n * this.noteWidth(), behavior: this.reduce ? 'auto' : 'smooth' });
+    this.setState({ note: n });
+  }
+
+  moveLens(e) {
+    if (!this.fine || !this.lens || !this.lensImg) return;
+    const hero = e.currentTarget;
+    const r = hero.getBoundingClientRect();
+    const px = e.clientX - r.left;
+    const py = e.clientY - r.top;
+    const over = e.target && e.target.closest && e.target.closest('.panel,.nav');
+    if (over) {
+      if (this.state.lens) this.setState({ lens: false });
+      return;
+    }
+    const iw = 1920;
+    const ih = 1252;
+    const s = Math.max(r.width / iw, r.height / ih);
+    const dw = iw * s;
+    const dh = ih * s;
+    const ox = (r.width - dw) * 0.6;
+    const oy = (r.height - dh) * 0.5;
+    const z = 2.6;
+    const rad = 108;
+    this.lens.style.transform = 'translate3d(' + (px - 120) + 'px,' + (py - 120) + 'px,0)';
+    this.lensImg.style.backgroundSize = (dw * z).toFixed(0) + 'px ' + (dh * z).toFixed(0) + 'px';
+    this.lensImg.style.backgroundPosition = (rad - (px - ox) * z).toFixed(1) + 'px ' + (rad - (py - oy) * z).toFixed(1) + 'px';
+    if (!this.state.lens) this.setState({ lens: true });
+  }
+
+  pickDate(i) {
+    const d = DATES[i];
+    let seating = this.state.seating;
+    if (d.seats[seating] === 0) seating = TIMES.find((t) => d.seats[t] > 0) || seating;
+    const guests = Math.max(1, Math.min(this.state.guests, d.seats[seating] || 1, 6));
+    this.setState({ date: i, seating, guests, error: '' });
+  }
+
+  pickSeating(t) {
+    const left = DATES[this.state.date].seats[t];
+    this.setState({ seating: t, guests: Math.max(1, Math.min(this.state.guests, left, 6)), error: '' });
+  }
+
+  submit(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    if (this.state.status === 'loading') return;
+    const v = this.state.email.trim();
+    let error = '';
+    if (!v) error = 'Enter an email so we can send your table note.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) error = 'That email looks incomplete. Try name@domain.com.';
+    else if (DATES[this.state.date].seats[this.state.seating] < this.state.guests) error = 'Those seats were just taken. Pick another seating.';
+    if (error) {
+      this.setState({ error });
+      return;
+    }
+    const serial = 'SS 2610 ' + String(4000 + Math.floor(Math.random() * 5999));
+    this.setState({ status: 'loading', error: '', serial });
+    this.timer = setTimeout(() => this.setState({ status: 'done' }), 1600);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const d = DATES[s.date];
+    const left = d.seats[s.seating];
+    const max = Math.min(6, left);
+    const hold = (s.guests * 5000).toLocaleString('en-US');
+    const c = s.hover >= 0 ? COURSES[s.hover] : COURSES[0];
+    const nt = (i) => (s.note === i ? 'nt' : 'nt dim');
+    return {
+      rootCls: 'ss' + (s.uv ? ' uv' : ''),
+      setRoot: (el) => { this.root = el; },
+      uvPressed: s.uv ? 'true' : 'false',
+      toggleUv: () => this.setState({ uv: !s.uv }),
+      navItems: NAV.map((n) => ({ href: '#' + n.id, label: n.label, current: s.active === n.id ? 'true' : 'false' })),
+      burgerCls: s.menuOpen ? 'burger open' : 'burger',
+      overlayCls: s.menuOpen ? 'overlay open' : 'overlay',
+      menuExpanded: s.menuOpen ? 'true' : 'false',
+      toggleMenu: () => this.setState({ menuOpen: !s.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      heroCls: s.coarse ? 'hero coarse' : 'hero',
+      lensCls: s.lens ? 'lens on' : 'lens',
+      onLens: (e) => this.moveLens(e),
+      offLens: () => this.setState({ lens: false }),
+      words: WORDS.map((t, i) => ({ t, cls: 'w' + (COPPER_WORDS[t] ? ' cu' : '') + (i < s.lit ? ' on' : '') })),
+      n0: nt(0),
+      n1: nt(1),
+      n2: nt(2),
+      n3: nt(3),
+      noteLabel: 'Note ' + ROMAN[s.note] + ' of IV',
+      prevOff: s.note <= 0,
+      nextOff: s.note >= 3,
+      prevNote: () => this.goNote(s.note - 1),
+      nextNote: () => this.goNote(s.note + 1),
+      dotItems: ROMAN.map((r, i) => ({ cls: i === s.note ? 'dot on' : 'dot', label: 'Go to note ' + r, go: () => this.goNote(i) })),
+      courses: COURSES.map((x, i) => ({ ...x, enter: () => this.setState({ hover: i }), leave: () => this.setState({ hover: -1 }) })),
+      folCls: s.hover >= 0 && !s.coarse ? 'fol on' : 'fol',
+      fol: { hasImg: !!c.src, noImg: !c.src, src: c.src || '/_blob/9a6da5c9e8dd555bab6321aa23debfd8', k: c.k },
+      wmCls: s.hold ? 'wm lit' : 'wm',
+      holdPressed: s.hold ? 'true' : 'false',
+      holdLabel: s.hold ? 'Put the note down' : 'Hold it to the light',
+      toggleHold: () => this.setState({ hold: !s.hold }),
+      bondSerial: s.serial || 'SS 2610 ····',
+      dateItems: DATES.map((x, i) => {
+        const total = x.seats['17:30'] + x.seats['20:00'];
+        const off = total === 0;
+        return {
+          dow: x.dow,
+          day: x.day,
+          left: off ? 'Full' : x.swell ? 'Swell watch' : total + ' left',
+          cls: i === s.date ? 'pill sel' : 'pill',
+          disabled: off,
+          pressed: i === s.date ? 'true' : 'false',
+          aria: x.long + (off ? ', fully booked' : ', ' + total + ' seats left'),
+          pick: () => this.pickDate(i)
+        };
+      }),
+      swell: !!d.swell,
+      seatItems: TIMES.map((t) => {
+        const n = d.seats[t];
+        return {
+          time: t,
+          left: n === 0 ? 'Full' : n === 1 ? '1 seat left' : n + ' seats left',
+          cls: t === s.seating ? 'pill sel' : 'pill',
+          disabled: n === 0,
+          pressed: t === s.seating ? 'true' : 'false',
+          pick: () => this.pickSeating(t)
+        };
+      }),
+      guests: s.guests,
+      dec: () => this.setState({ guests: Math.max(1, s.guests - 1) }),
+      inc: () => this.setState({ guests: Math.min(max, s.guests + 1) }),
+      decOff: s.guests <= 1,
+      incOff: s.guests >= max,
+      guestHint: max < 6 ? 'Only ' + left + (left === 1 ? ' seat' : ' seats') + ' left at ' + s.seating + '.' : 'Up to six online. For more, write to us.',
+      email: s.email,
+      onEmail: (e) => this.setState({ email: e.target.value, error: '' }),
+      inCls: s.error ? 'in err' : 'in',
+      invalid: s.error ? 'true' : 'false',
+      hasError: !!s.error,
+      error: s.error,
+      summary: s.guests + (s.guests === 1 ? ' guest' : ' guests') + ' · ' + d.dow + ' ' + d.day + ' ' + d.mon + ' · ' + s.seating,
+      holdText: '¥' + hold + ' hold',
+      submit: (e) => this.submit(e),
+      isLoading: s.status === 'loading',
+      notLoading: s.status !== 'loading',
+      isDone: s.status === 'done',
+      notDone: s.status !== 'done',
+      doneTitle: 'Your table note is issued for ' + d.long + ' at ' + s.seating + '.',
+      doneBody: 'We sent it to ' + s.email.trim() + '. If the boat stays in that morning, the ¥' + hold + ' hold comes back by 09:00.',
+      ticketMeta: d.dow + ' ' + d.day + ' ' + d.mon + ' · ' + s.seating + ' · Pier 2',
+      serial: s.serial,
+      reset: () => this.setState({ status: 'idle' })
+    };
+  }
+}
+</script>
+</body>
+</html>
