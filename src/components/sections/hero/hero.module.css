@@ -1,0 +1,417 @@
+.hero {
+  position: relative;
+  height: 900px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+@media (pointer: fine) {
+  .hero {
+    cursor: none;
+  }
+}
+
+.plate {
+  position: absolute;
+  inset: 0;
+}
+
+.plate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--paper-2);
+  transform-origin: bottom;
+  animation: press-away 2s var(--ease) both;
+  pointer-events: none;
+}
+
+@keyframes press-away {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+.poster,
+.video {
+  object-fit: cover;
+  object-position: 60% 50%;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition:
+    opacity 1.2s var(--ease),
+    filter 1.1s var(--ease);
+}
+
+.video[data-ready] {
+  opacity: 1;
+}
+
+.uvMark {
+  position: absolute;
+  right: 20%;
+  top: 36%;
+  z-index: 3;
+  transform: rotate(-8deg);
+}
+
+.uvMark span {
+  display: block;
+  font-size: 128px;
+  line-height: 1;
+}
+
+.uvMark p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.denom {
+  position: absolute;
+  right: 56px;
+  top: 112px;
+  z-index: 3;
+  text-align: right;
+  animation: var(--kf-rise) 1.4s var(--ease) 0.5s both;
+}
+
+.price {
+  font-size: 96px;
+}
+
+.yen {
+  margin-right: 4px;
+  font-size: 60px;
+  vertical-align: top;
+}
+
+.priceNote {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--deep);
+}
+
+.priceNote b {
+  font-weight: 500;
+  color: var(--copper-ink);
+}
+
+.panel {
+  position: absolute;
+  left: 56px;
+  bottom: 56px;
+  z-index: 4;
+  width: min(640px, calc(100% - 112px));
+  padding: 12px;
+  border-radius: 4px;
+  cursor: auto;
+  background: var(--paper);
+  box-shadow:
+    0 0 0 1px var(--ring),
+    0 40px 80px -40px var(--shadow-deep);
+  animation: var(--kf-rise) 1.4s var(--ease) 0.3s both;
+  transition: background-color 0.9s var(--ease);
+}
+
+.band {
+  height: 12px;
+  margin: -12px -12px 12px;
+  border-radius: 4px 4px 0 0;
+  background: url("/engraving/band-copper.svg") repeat-x center;
+  background-size: 192px 40px;
+}
+
+.panelInner {
+  position: relative;
+  padding: 32px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.panelRosette {
+  --spin: 160s;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -180px;
+  top: -160px;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.serial {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+  color: var(--copper-ink);
+}
+
+.title {
+  position: relative;
+  max-width: 680px;
+  margin: 24px 0 0;
+  padding-bottom: 4px;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  text-wrap: balance;
+  background: linear-gradient(90deg, var(--headline-from) 15%, var(--headline-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.line {
+  display: block;
+  animation: var(--kf-rise) 1.2s var(--ease) both;
+}
+
+.line:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.line:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.line:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.sub {
+  position: relative;
+  max-width: 520px;
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--mute);
+  text-wrap: pretty;
+  animation: var(--kf-rise) 1.2s var(--ease) 0.8s both;
+}
+
+.ctaRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  animation: var(--kf-rise) 1.2s var(--ease) 0.9s both;
+}
+
+.proof {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--mute);
+}
+
+.proof svg {
+  color: var(--copper-ink);
+}
+
+.hint {
+  position: absolute;
+  right: 56px;
+  bottom: 56px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--chip-ink);
+  background: var(--chip-ground);
+  animation: var(--kf-rise) 1.2s var(--ease) 1.2s both;
+}
+
+.lens {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 240px;
+  height: 240px;
+  border-radius: 9999px;
+  pointer-events: none;
+  opacity: 0;
+  scale: 0.6;
+  transform: translate3d(-999px, -999px, 0);
+  will-change: transform;
+  transition:
+    opacity 0.5s var(--ease),
+    scale 0.6s var(--ease);
+}
+
+.lens[data-on] {
+  opacity: 1;
+  scale: 1;
+}
+
+.lensImage {
+  position: absolute;
+  inset: 12px;
+  border-radius: 9999px;
+  background-repeat: no-repeat;
+  background-color: var(--paper-2);
+  box-shadow:
+    inset 0 0 0 1px var(--ring),
+    0 24px 48px -12px var(--shadow-deep);
+}
+
+.lensRing {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: var(--kf-spin) 30s linear infinite;
+}
+
+.lensRing circle {
+  fill: none;
+  stroke: var(--deep);
+  stroke-width: 1;
+}
+
+.lensRing text {
+  font-family: var(--font-mono), monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  fill: var(--deep);
+}
+
+.cross {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+}
+
+.cross::before,
+.cross::after {
+  content: "";
+  position: absolute;
+  background: var(--copper);
+}
+
+.cross::before {
+  left: 7.5px;
+  top: 0;
+  width: 1px;
+  height: 16px;
+}
+
+.cross::after {
+  top: 7.5px;
+  left: 0;
+  width: 16px;
+  height: 1px;
+}
+
+@media (max-width: 1100px) {
+  .uvMark {
+    right: 8%;
+  }
+}
+
+@media (max-width: 860px) {
+  .denom {
+    right: 32px;
+    top: 96px;
+  }
+
+  .price {
+    font-size: 60px;
+  }
+
+  .yen {
+    font-size: 36px;
+  }
+
+  .hint {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    height: auto;
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 400px 16px 16px;
+  }
+
+  .panel {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+  }
+
+  .panelInner {
+    padding: 24px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .uvMark span {
+    font-size: 96px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate::after {
+    display: none;
+  }
+}
