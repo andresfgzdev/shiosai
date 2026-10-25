@@ -1,0 +1,45 @@
+.strip {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 12px 0;
+  background: var(--strip-ground);
+  color: var(--strip-ink);
+  transition:
+    background-color 0.9s var(--ease),
+    color 0.9s var(--ease);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: var(--kf-marquee) 80s linear infinite;
+}
+
+.strip:hover .track {
+  animation-play-state: paused;
+}
+
+.items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.items li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.items b {
+  font-weight: 500;
+  color: var(--sky);
+}
