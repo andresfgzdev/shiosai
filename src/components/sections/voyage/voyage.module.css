@@ -1,0 +1,323 @@
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 96px 0 64px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.title {
+  max-width: 680px;
+  margin: 16px 0 0;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.lead {
+  max-width: 560px;
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--mute);
+  text-wrap: pretty;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.controls p {
+  min-width: 96px;
+  margin: 0;
+  text-align: right;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.12em;
+  color: var(--mute);
+}
+
+.round {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: var(--deep);
+  background: var(--paper-2);
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition:
+    transform 0.6s var(--ease),
+    background-color 0.6s var(--ease),
+    opacity 0.6s var(--ease);
+}
+
+.round:hover {
+  transform: scale(1.06);
+  background: var(--paper);
+}
+
+.round:active {
+  transform: scale(0.94);
+}
+
+.round:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+  transform: none;
+}
+
+.track {
+  display: flex;
+  gap: 32px;
+  padding: 48px max(40px, calc((100% - 1200px) / 2)) 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  cursor: grab;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.track[data-drag] {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.track[data-drag] * {
+  user-select: none;
+}
+
+.track:focus-visible {
+  outline-offset: -4px;
+}
+
+.note {
+  flex: none;
+  width: min(1040px, 84vw);
+  padding: 12px;
+  border-radius: 4px;
+  scroll-snap-align: center;
+  background: url("/engraving/band-cobalt.svg") repeat;
+  background-size: 192px 40px;
+  box-shadow:
+    0 0 0 1px var(--ring),
+    0 40px 80px -48px var(--shadow-deep);
+  transition:
+    transform 1s var(--ease),
+    opacity 1s var(--ease);
+}
+
+.note[data-dim] {
+  transform: scale(0.96);
+}
+
+.media,
+.body {
+  transition: opacity 1s var(--ease);
+}
+
+.note[data-dim] .media {
+  opacity: 0.45;
+}
+
+.note[data-dim] .body {
+  opacity: 0.85;
+}
+
+.noteInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  min-height: 460px;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--ring);
+  transition: background-color 0.9s var(--ease);
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.media video,
+.media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media img {
+  -webkit-user-drag: none;
+}
+
+:root:not([data-uv]) .teal {
+  filter: hue-rotate(-32deg) saturate(1.1);
+}
+
+:root:not([data-uv]) .violet {
+  filter: hue-rotate(34deg);
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.rosette {
+  --spin: 140s;
+  position: absolute;
+  right: -150px;
+  bottom: -150px;
+  width: 360px;
+  height: 360px;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.copy {
+  position: relative;
+}
+
+.time {
+  font-size: 72px;
+  letter-spacing: -0.05em;
+}
+
+.copy h3 {
+  margin: 16px 0 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.copy p:last-child {
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--mute);
+  text-wrap: pretty;
+}
+
+.foot {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.footLabel {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.kanji {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--copper);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.dot {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.dot span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--line);
+  transition:
+    background-color 0.6s var(--ease),
+    transform 0.6s var(--ease);
+}
+
+.dot:hover span {
+  background: var(--line-strong);
+}
+
+.dot[data-on] span {
+  background: var(--copper);
+  transform: scaleY(2);
+}
+
+@media (max-width: 860px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .noteInner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .media {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0 48px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .track {
+    gap: 16px;
+    padding: 32px 16px 16px;
+  }
+
+  .note {
+    width: 88vw;
+  }
+
+  .time {
+    font-size: 48px;
+  }
+}
