@@ -1,0 +1,222 @@
+.page {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: 48px 16px;
+  overflow: hidden;
+}
+
+.note {
+  position: relative;
+  width: min(960px, 100%);
+  padding: 12px;
+  border-radius: 4px;
+  background: url("/engraving/band-cobalt.svg") repeat;
+  background-size: 192px 40px;
+  box-shadow:
+    0 0 0 1px var(--ring),
+    0 48px 96px -48px var(--shadow-deep);
+  animation: var(--kf-rise) 1.2s var(--ease) both;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--ring);
+}
+
+.rosette {
+  --spin: 160s;
+  position: absolute;
+  right: -160px;
+  top: -120px;
+  width: 560px;
+  height: 560px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.serial {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  color: var(--copper-ink);
+}
+
+.number {
+  position: relative;
+  margin: 0;
+  font-size: 128px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--cobalt);
+  background: url("/engraving/hatch.svg") repeat;
+  background-size: 120px 120px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: var(--kf-mesh) 24s linear infinite;
+}
+
+.title {
+  position: relative;
+  max-width: 680px;
+  margin: 0;
+  padding-bottom: 4px;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  text-wrap: balance;
+  background: linear-gradient(90deg, var(--headline-from) 15%, var(--headline-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text {
+  position: relative;
+  max-width: 520px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--mute);
+  text-wrap: pretty;
+}
+
+.actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 8px 16px 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--on-cobalt);
+  background: var(--cobalt);
+  box-shadow:
+    inset 0 0 0 1px var(--on-cobalt-ring),
+    inset 0 0 0 4px var(--cobalt),
+    inset 0 0 0 5px var(--on-cobalt-ring),
+    0 16px 32px -16px var(--cobalt);
+  transition:
+    transform 0.6s var(--ease),
+    filter 0.6s var(--ease);
+}
+
+.back:hover {
+  color: var(--on-cobalt);
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.back:active {
+  transform: scale(0.98);
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: var(--on-cobalt-tile);
+  transition: transform 0.6s var(--ease);
+}
+
+.back:hover .arrow {
+  transform: translateX(-4px);
+}
+
+.mail {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--cobalt);
+  text-underline-offset: 4px;
+  text-decoration-color: var(--line);
+  transition: text-decoration-color 0.5s var(--ease);
+}
+
+.mail:hover {
+  text-decoration-color: currentColor;
+}
+
+.void {
+  position: absolute;
+  right: 48px;
+  bottom: 48px;
+  display: grid;
+  place-items: center;
+  width: 144px;
+  height: 144px;
+  border-radius: 4px;
+  font-size: 60px;
+  line-height: 1;
+  color: var(--copper);
+  box-shadow:
+    inset 0 0 0 2px var(--copper),
+    inset 0 0 0 6px var(--paper),
+    inset 0 0 0 7px var(--copper);
+  opacity: 0.9;
+  transform: rotate(-8deg);
+  animation: var(--kf-stamp) 1s var(--ease) 0.7s both;
+}
+
+@media (max-width: 720px) {
+  .inner {
+    padding: 32px 24px;
+  }
+
+  .number {
+    font-size: 96px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .void {
+    right: 24px;
+    bottom: 24px;
+    width: 96px;
+    height: 96px;
+    font-size: 48px;
+  }
+}
